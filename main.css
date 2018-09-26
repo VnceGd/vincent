@@ -122,7 +122,7 @@ a {
     text-align: center;
 }
 .container button {
-    border-color: #E3F2FD;
+    border: 1px solid #E3F2FD;
     font-size: 1rem;
     transition: .2s;
 }
@@ -131,6 +131,11 @@ a {
     font-size: 3rem;
     text-align: center;
     transition: .2s;
+}
+.chevron-down {
+    stroke: #1976D2;
+    stroke-width: 2rem;
+    stroke-linecap: round;
 }
 .footer a {
     color: #E3F2FD;
