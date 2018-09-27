@@ -1,9 +1,15 @@
 <!DOCTYPE html>
+<!-- Vincent Nguyen -->
+<!-- September 2018 -->
+<!-- https://vncegd.github.io/vincent/index.html -->
+
 <html>
     <head>
         <title>Vincent Nguyen</title>
+        <link rel="shortcut icon" href="images/v_favicon.png"/>
         
         <!-- LINKS TO EXTERNAL RESOURCES -->
+        <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> -->
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         
         <!-- CSS STYLING -->
@@ -21,12 +27,15 @@
         <div class="jumbo" id="jumbo">
             <div class="container">
                 <h1>Vincent Nguyen</h1>
-                <h3>Independent Web and Game Developer</h3>
+                <h3>Web and Game Developer</h3>
                 <a class="middle-link" href="#about">
-                    <svg class="chevron-down" width="2rem" viewbox="0 0 100 75">
+                    <!-- Testing different chevrons (file, link, inline) -->
+                    <img class="chevron-down" src="images/chevron_down.svg"/>
+                    <!-- <i class="fas fa-chevron-down"></i> -->
+                    <!-- <svg class="chevron-down" width="2rem" viewbox="0 0 100 75">
                         <line x1="0" y1="0" x2="50" y2="50"/>
                         <line x1="50" y1="50" x2="100" y2="0"/>
-                    </svg>
+                    </svg> -->
                 </a>
             </div>
         </div>
@@ -37,7 +46,7 @@
                 <div class="about-content">
                     <h3>Summary</h3>
                     <ul>
-                        <li>Pre-Junior (3rd Year) at Drexel University; CS Major with a concentration in Game Programming and Development</li>
+                        <li>Pre-Junior (3rd Year) at Drexel University; Computer Science Major with a concentration in Game Programming and Development</li>
                         <li>Aspiring independent game developer</li>
                         <li>Experienced with web design and development</li>
                         <li>Enjoys playing computer games during free time</li>
@@ -51,10 +60,13 @@
                     </ul>
                 </div>
                 <a class="middle-link" href="#portfolio">
-                    <svg class="chevron-down" width="2rem" viewbox="0 0 100 75">
-                            <line x1="0" y1="0" x2="50" y2="50"/>
-                            <line x1="50" y1="50" x2="100" y2="0"/>
-                    </svg>
+                    <!-- Testing different chevrons (file, link, inline) -->
+                    <img class="chevron-down" src="images/chevron_down.svg"/>
+                    <!-- <i class="fas fa-chevron-down"></i> -->
+                    <!-- <svg class="chevron-down" width="2rem" viewbox="0 0 100 75">
+                        <line x1="0" y1="0" x2="50" y2="50"/>
+                        <line x1="50" y1="50" x2="100" y2="0"/>
+                    </svg> -->
                 </a>
             </div>
         </div>
@@ -81,10 +93,13 @@
                     </p>
                 </div>
                 <a class="middle-link" href="#resume">
-                    <svg class="chevron-down" width="2rem" viewbox="0 0 100 75">
+                    <!-- Testing different chevrons (file, link, inline) -->
+                    <img class="chevron-down" src="images/chevron_down.svg"/>
+                    <!-- <i class="fas fa-chevron-down"></i> -->
+                    <!-- <svg class="chevron-down" width="2rem" viewbox="0 0 100 75">
                         <line x1="0" y1="0" x2="50" y2="50"/>
                         <line x1="50" y1="50" x2="100" y2="0"/>
-                    </svg>
+                    </svg> -->
                 </a>
             </div>
         </div>
@@ -118,9 +133,9 @@
                     <h4>Skills</h4>
                     <table>
                         <tr>
-                            <th colspan="2" style="text-align: left">Programming Languages</th>
-                            <th colspan="2" style="text-align: left">Markup Languages</th>
-                            <th colspan="2" style="text-align: left">Software</th>
+                            <th class="left-col" colspan="2">Programming Languages</th>
+                            <th class="left-col" colspan="2">Markup Languages</th>
+                            <th class="left-col" colspan="2">Software</th>
                         </tr>
                         <tr>
                             <td>
@@ -303,18 +318,12 @@
         //Script from w3schools.com/bootstrap/bootstrap_theme_company.asp
         //Creates a smooth scrolling effect when links are clicked.
         $(document).ready(function(){
-            // Add smooth scrolling to all links in navbar + footer link
             $(".nav a, .jumbo a[href='#about'], .about a[href='#portfolio'], .portfolio a[href='#resume'], .footer a[href='#jumbo']").on('click', function(event) {
-                // Prevent default anchor click behavior
                 event.preventDefault();
-                // Store hash
                 var hash = this.hash;
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (500) specifies the number of milliseconds it takes to scroll to the specified area
                 $('html, body').animate({
                 scrollTop: $(hash).offset().top
                 }, 500, function(){
-                // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
                 });
             });
