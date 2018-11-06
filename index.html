@@ -1,17 +1,13 @@
 <!DOCTYPE html>
-<!-- Vincent Nguyen -->
-<!-- September 2018 -->
+<!-- Vincent Nguyen 2018 -->
 <!-- https://vncegd.github.io/vincent/index.html -->
-
 <html>
     <head>
         <title>Vincent Nguyen</title>
         <link rel="shortcut icon" href="images/v_favicon.png"/>
-        
         <!-- LINKS TO EXTERNAL RESOURCES -->
-        <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-        
         <!-- CSS STYLING -->
         <link rel="stylesheet" href="main.css">
     </head>
@@ -27,15 +23,9 @@
         <div class="jumbo" id="jumbo">
             <div class="container">
                 <h1>Vincent Nguyen</h1>
-                <h3>Web and Game Developer</h3>
+                <h3>Web/Game Developer, College Student, PC Gamer</h3>
                 <a class="middle-link" href="#about">
-                    <!-- Testing different chevrons (file, link, inline) -->
-                    <img class="chevron-down" src="images/chevron_down.svg"/>
-                    <!-- <i class="fas fa-chevron-down"></i> -->
-                    <!-- <svg class="chevron-down" width="2rem" viewbox="0 0 100 75">
-                        <line x1="0" y1="0" x2="50" y2="50"/>
-                        <line x1="50" y1="50" x2="100" y2="0"/>
-                    </svg> -->
+                    <i class="fas fa-chevron-down"></i>
                 </a>
             </div>
         </div>
@@ -46,28 +36,129 @@
                 <div class="about-content">
                     <h3>Summary</h3>
                     <ul>
-                        <li>Pre-Junior (3rd Year) at Drexel University; Computer Science Major with a concentration in Game Programming and Development</li>
-                        <li>Aspiring independent game developer</li>
-                        <li>Experienced with web design and development</li>
-                        <li>Enjoys playing computer games during free time</li>
+                        <li>I'm a Pre-Junior (3rd Year) at Drexel University; Computer Science Major with a concentration in Game Programming and Development</li>
+                        <li>I hope to become independent game developer and/or designer</li>
+                        <li>I became interested in programming and art through my gaming experiences
+                            <ul>
+                                <li>I explored programming through web design and development</li>
+                                <li>I explored digital art through creation of pixel art in GIMP</li>
+                            </ul>
+                        </li>
+                        <li>I enjoy playing computer games during my free time, mostly solo</li>
                     </ul>
-                    <h3>Hobbies</h3>
+                    <h3>Hobbies and Interests</h3>
                     <ul>
-                        <li>Computer Games (Currently playing: osu!, Warframe, Fortnite)</li>
-                        <li>Digital Art (Pixel art, 2D design, 3D modeling)</li>
-                        <li>Programming (Web development, JavaScript, Python, C++)</li>
-                        <li>Music (Piano)</li>
+                        <li><a onclick="toggleModal('games')">Computer Games</a></li>
+                        <li><a onclick="toggleModal('digital-art')">Digital Art</a></li>
+                        <li><a onclick="toggleModal('programming')">Programming</a></li>
+                        <li><a onclick="toggleModal('music')">Music</a></li>
                     </ul>
                 </div>
                 <a class="middle-link" href="#portfolio">
-                    <!-- Testing different chevrons (file, link, inline) -->
-                    <img class="chevron-down" src="images/chevron_down.svg"/>
-                    <!-- <i class="fas fa-chevron-down"></i> -->
-                    <!-- <svg class="chevron-down" width="2rem" viewbox="0 0 100 75">
-                        <line x1="0" y1="0" x2="50" y2="50"/>
-                        <line x1="50" y1="50" x2="100" y2="0"/>
-                    </svg> -->
+                    <i class="fas fa-chevron-down"></i>
                 </a>
+            </div>
+        </div>
+        <!-- COMPUTER GAMES MODAL -->
+        <div class="modal" id="games">
+            <div class="modal-content">
+                <a class="modal-x" onclick="toggleModal('games')">&times;</a>
+                <h3>Computer Games</h3>
+                <h4>Recently Played</h4>
+                <ul>
+                    <li><a href="https://osu.ppy.sh">osu!</a></li>
+                    <li><a href="https://warframe.com">Warframe</a></li>
+                    <li><a href="https://fortnite.com">Fortnite: Battle Royale</a></li>
+                </ul>
+                <h4>PC Specs (as of November 2018)</h4>
+                <h5><i>Note: This list is missing details.</i></h5>
+                <table>
+                    <tr><td class="right">Motherboard:</td><td>Gigabyte GA-P55A-UD4P</td></tr>
+                    <tr><td class="right">CPU:</td><td>Intel Core i5 750</td></tr>
+                    <tr><td class="right">GPU:</td><td>NVIDIA GeForce GTX 760</td></tr>
+                    <tr><td class="right">RAM:</td><td>2x2GB GSkill, 2x2GB Standard</td></tr>
+                    <tr><td class="right">PSU:</td><td>650W</td></tr>
+                    <tr><td class="right">HDD:</td><td>640GB Western Digital WD6401AALS-00J7B1</td></tr>
+                    <tr><td class="right">Case:</td><td>Cooler Master HAF 912</td></tr>
+                    <tr><td class="right">Monitor 1:</td><td>Samsung SyncMaster SA350</td></tr>
+                    <tr><td class="right">Monitor 2:</td><td>Hannspree HF225</td></tr>
+                    <tr><td class="right">Keyboard:</td><td>AZIO MKG1</td></tr>
+                    <tr><td class="right">Mouse:</td><td>Etekcity Scroll S200</td></tr>
+                    <tr><td class="right">Headphones:</td><td>Apple EarPods</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- DIGITAL ART MODAL -->
+        <div class="modal" id="digital-art">
+            <div class="modal-content">
+                <a class="modal-x" onclick="toggleModal('digital-art')">&times;</a>
+                <h3>Digital Art</h3>
+                <h4>Software</h4>
+                <ul>
+                    <p>Free</p>
+                    <li>2D: GIMP</li>
+                    <li>3D: Blender, Unity</li>
+                    <p>Educational Use</p>
+                    <li>2D: Adobe Photoshop & Illustrator</li>
+                    <li>3D: Autodesk Maya & Mudbox 2018</li>
+                </ul>
+                <h4>Platforms</h4>
+                <ul>
+                    <li><a href="https://vncegd.imgur.com">Imgur</a></li>
+                    <li><a href="https:/facebook.com/16nguyenv">Facebook</a></li>
+                </ul>
+                <h4>Camera</h4>
+                <ul>
+                    <li>Nikon D3400</li>
+                </ul>
+            </div>
+        </div>
+        <!-- PROGRAMMING MODAL -->
+        <div class="modal" id="programming">
+            <div class="modal-content">
+                <a class="modal-x" onclick="toggleModal('programming')">&times;</a>
+                <h3>Programming</h3>
+                <h4>Web Development</h4>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>JQuery</li>
+                </ul>
+                <h4>Other Languages</h4>
+                <ul>
+                    <li>Python</li>
+                    <li>C++</li>
+                    <li>C</li>
+                    <li>Java</li>
+                    <li>NodeJS</li>
+                    <li>MySQL</li>
+                    <li>Bash</li>
+                </ul>
+                <h4>Environment</h4>
+                <ul>
+                    <li>MacOSX</li>
+                    <li>Visual Studio Code</li>
+                </ul>
+            </div>
+        </div>
+        <!-- MUSIC MODAL -->
+        <div class="modal" id="music">
+            <div class="modal-content">
+                <a class="modal-x" onclick="toggleModal('music')">&times;</a>
+                <h3>Music</h3>
+                <h4>Favorite Genres</h4>
+                <ul>
+                    <li>Electronic</li>
+                    <li>Chillstep</li>
+                    <li>Japanese Rock and Pop</li>
+                    <li>(Check my <a href="https://osu.ppy.sh/users/4890690">osu! userpage</a> for specific songs. I typically don't listen to music on other platforms.)</li>
+                </ul>
+                <h4>Instruments</h4>
+                <ul>
+                    <li>Piano</li>
+                </ul>
             </div>
         </div>
         <!-- PORTFOLIO SECTION -->
@@ -75,31 +166,29 @@
             <div class="container">
                 <h1>Vincent's Portfolio</h1>
                 <div class="portfolio-content">
-                    <a href="../random/index.html">Website of Random Games</a>
+                    <a href="../random/index.html">'Random' Website</a>
                     <p>
                         A website containing games with random number generation, used as practice with JavaScript.
                     </p>
-                    <a href="../pixelart/index.html">Pixel Art Website</a>
+                    <a href="../pixelart/index.html">'Pixel Art' Website</a>
                     <p>
                         A website about Vincent Nguyen that contains a collection of pixel art created in high school.
+                    </p>
+                    <a href="../five/index.html">Five</a>
+                    <p>
+                        An experimental project featuring five pictures made with five-color palettes.
                     </p>
                     <a href="../dyschordia/index.html">Dyschordia</a>
                     <p>
                         A 2D action platforming game in which enemy attacks are synchronized with the background music; the final project of Computing and Informatics Design.
                     </p>
-                    <a href="../portfolio/vtn28_finalProject.png">DIGM 100 Final Project</a>
+                    <a href="../portfolio/vtn28_finalProject.png">Time Burns Away</a>
                     <p>
-                        An 800x1000 movie poster concept created in Adobe Illustrator as the final project of Digital Media 100
+                        An 800x1000 movie poster concept created in Adobe Illustrator as the final project of Digital Media.
                     </p>
                 </div>
                 <a class="middle-link" href="#resume">
-                    <!-- Testing different chevrons (file, link, inline) -->
-                    <img class="chevron-down" src="images/chevron_down.svg"/>
-                    <!-- <i class="fas fa-chevron-down"></i> -->
-                    <!-- <svg class="chevron-down" width="2rem" viewbox="0 0 100 75">
-                        <line x1="0" y1="0" x2="50" y2="50"/>
-                        <line x1="50" y1="50" x2="100" y2="0"/>
-                    </svg> -->
+                    <i class="fas fa-chevron-down"></i>
                 </a>
             </div>
         </div>
@@ -113,7 +202,8 @@
                     <p>
                         Address: 477 Darby Paoli Rd. Paoli, PA, 19301 <br>
                         Email: vtn28@drexel.edu <br>
-                        Phone: 484-557-2309
+                        Phone: 484-557-2309 <br>
+                        Website: <a href="#">https://vncegd.github.io/vincent</a>
                     </p>
                     <h4>Education</h4>
                     <table>
@@ -121,7 +211,7 @@
                             <td class="left-col">
                                 Drexel University<br>
                                 Bachelor of Science in Computer Science<br>
-                                Concentration: Game Programming and Development
+                                Game Programming and Development Concentration
                             </td>
                             <td class="right-col">
                                 Philadelphia, PA<br>
@@ -133,73 +223,101 @@
                     <h4>Skills</h4>
                     <table>
                         <tr>
-                            <th class="left-col" colspan="2">Programming Languages</th>
-                            <th class="left-col" colspan="2">Markup Languages</th>
-                            <th class="left-col" colspan="2">Software</th>
+                            <th class="third-col" colspan="2">Programming Languages</th>
+                            <th class="third-col" colspan="2">Markup Languages</th>
+                            <th class="third-col" colspan="2">Software</th>
                         </tr>
                         <tr>
+                            <td>JavaScript</td>
                             <td>
-                                JavaScript<br>
-                                Python    <br>
-                                C++       <br>
-                                Bash      <br>
-                                C
+                                <svg class="bar" viewbox="0 0 1000 100">
+                                    <polygon points="0,0 800,0 800,100 0,100"/>
+                                </svg>
                             </td>
                             <td>
-                                <svg height="1rem" viewbox="0 0 1000 100">
+                                HTML
+                            </td>
+                            <td>
+                                <svg class="bar" viewbox="0 0 1000 100">
                                     <polygon points="0,0 800,0 800,100 0,100"/>
-                                </svg><br>
-                                <svg height="1rem" viewbox="0 0 1000 100">
+                                </svg>
+                            </td>
+                            <td>Github</td>
+                            <td>
+                                <svg class="bar" viewbox="0 0 1000 100">
+                                    <polygon points="0,0 800,0 800,100 0,100"/>
+                                </svg>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Java</td>
+                            <td>
+                                <svg class="bar" viewbox="0 0 1000 100">
                                     <polygon points="0,0 600,0 600,100 0,100"/>
-                                </svg><br>
-                                <svg height="1rem" viewbox="0 0 1000 100">
+                                </svg>
+                            </td>
+                            <td>CSS</td>
+                            <td>
+                                <svg class="bar" viewbox="0 0 1000 100">
+                                    <polygon points="0,0 700,0 700,100 0,100"/>
+                                </svg>
+                            </td>
+                            <td>Eclipse Photon</td>
+                            <td>
+                                <svg class="bar" viewbox="0 0 1000 100">
+                                    <polygon points="0,0 600,0 600,100 0,100"/>
+                                </svg>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                            <td>
+                                <svg class="bar" viewbox="0 0 1000 100">
                                     <polygon points="0,0 500,0 500,100 0,100"/>
-                                </svg><br>
-                                <svg height="1rem" viewbox="0 0 1000 100">
+                                </svg>
+                            </td>
+                            <td>LaTeX</td>
+                            <td>
+                                <svg class="bar" viewbox="0 0 1000 100">
+                                    <polygon points="0,0 500,0 500,100 0,100"/>
+                                </svg>
+                            </td>
+                            <td>Unity</td>
+                            <td>
+                                <svg class="bar" viewbox="0 0 1000 100">
+                                    <polygon points="0,0 600,0 600,100 0,100"/>
+                                </svg>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Bash</td>
+                            <td>
+                                <svg class="bar" viewbox="0 0 1000 100">
                                     <polygon points="0,0 400,0 400,100 0,100"/>
-                                </svg><br>
-                                <svg height="1rem" viewbox="0 0 1000 100">
+                                </svg>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td>Autodesk Maya</td>
+                            <td>
+                                <svg class="bar" viewbox="0 0 1000 100">
+                                    <polygon points="0,0 500,0 500,100 0,100"/>
+                                </svg>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>C++</td>
+                            <td>
+                                <svg class="bar" viewbox="0 0 1000 100">
                                     <polygon points="0,0 300,0 300,100 0,100"/>
                                 </svg>
                             </td>
+                            <td></td>
+                            <td></td>
+                            <td>Xcode</td>
                             <td>
-                                HTML <br>
-                                CSS  <br>
-                                LaTeX 
-                            </td>
-                            <td>
-                                <svg height="1rem" viewbox="0 0 1000 100">
-                                    <polygon points="0,0 800,0 800,100 0,100"/>
-                                </svg><br>
-                                <svg height="1rem" viewbox="0 0 1000 100">
-                                    <polygon points="0,0 700,0 700,100 0,100"/>
-                                </svg><br>
-                                <svg height="1rem" viewbox="0 0 1000 100">
-                                    <polygon points="0,0 600,0 600,100 0,100"/>
-                                </svg>
-                            </td>
-                            <td>
-                                Github           <br>
-                                Unity            <br>
-                                Adobe Illustrator<br>
-                                DrRacket         <br>
-                                Xcode
-                            </td>
-                            <td>
-                                <svg height="1rem" viewbox="0 0 1000 100">
-                                    <polygon points="0,0 800,0 800,100 0,100"/>
-                                </svg><br>
-                                <svg height="1rem" viewbox="0 0 1000 100">
-                                    <polygon points="0,0 700,0 700,100 0,100"/>
-                                </svg><br>
-                                <svg height="1rem" viewbox="0 0 1000 100">
-                                    <polygon points="0,0 600,0 600,100 0,100"/>
-                                </svg><br>
-                                <svg height="1rem" viewbox="0 0 1000 100">
-                                    <polygon points="0,0 500,0 500,100 0,100"/>
-                                </svg><br>
-                                <svg height="1rem" viewbox="0 0 1000 100">
-                                    <polygon points="0,0 400,0 400,100 0,100"/>
+                                <svg class="bar" viewbox="0 0 1000 100">
+                                    <polygon points="0,0 300,0 300,100 0,100"/>
                                 </svg>
                             </td>
                         </tr>
@@ -240,7 +358,7 @@
                                 Paoli, PA<br>
                                 August 2018 to Present<br>
                                 <br>
-                                Link to website<br>
+                                Direct Link<br>
                                 <a href="../random/index.html'">https://vncegd.github.io/random</a>
                             </td>
                         </tr>
@@ -259,7 +377,10 @@
                             </td>
                             <td class="right-col">
                                 Philadelphia, PA<br>
-                                January to June 2017
+                                January to June 2017<br>
+                                <br>
+                                Direct Link<br>
+                                <a href="../dyschordia/index.html">https://vncegd.github.io/dyschordia</a>
                             </td>
                         </tr>
                     </table>
@@ -269,9 +390,9 @@
                             <td>
                                 Computing and Informatics Design I, II, III<br>
                                 Systems Programming<br>
-                                Data Structures<br>
+                                Mathematical Foundations of Computer Science<br>
                                 Discrete Mathematics<br>
-                                Fundamentals of Physics I, II, III
+                                Advanced Programming Techniques
                             </td>
                             <td>
                                 Software Design<br>
@@ -306,14 +427,13 @@
                         <a href="#jumbo">Back to Top</a>
                     </td>
                     <td style="text-align: right">
-                        September 2018
+                        Vincent Nguyen | 2018
                     </td>
                 </tr>
             </table>
         </div>
-
         <!-- SCRIPTS -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
         //Script from w3schools.com/bootstrap/bootstrap_theme_company.asp
         //Creates a smooth scrolling effect when links are clicked.
@@ -322,12 +442,32 @@
                 event.preventDefault();
                 var hash = this.hash;
                 $('html, body').animate({
-                scrollTop: $(hash).offset().top
-                }, 500, function(){
-                window.location.hash = hash;
+                    scrollTop: $(hash).offset().top
+                    }, 500, function(){
+                    window.location.hash = hash;
                 });
             });
-        })
+        });
+
+        window.onclick = function(event) {
+            let gamesModal  = document.getElementById("games");
+            let digartModal = document.getElementById("digital-art");
+            let progModal   = document.getElementById("programming");
+            let musicModal  = document.getElementById("music");
+            let modals = [gamesModal, digartModal, progModal, musicModal];
+
+            if(modals.includes(event.target))
+                event.target.style.display = "none";
+        }
+
+        function toggleModal(modal) {
+            let menu = document.getElementById(modal);
+
+            if(menu.style.display == "block")
+                menu.style.display = "none";
+            else
+                menu.style.display = "block";
+        }
         </script>
     </body>
 </html>

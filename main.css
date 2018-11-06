@@ -6,25 +6,37 @@
 html, body, .nav, .jumbo, .about, .portfolio, .resume, .container, .footer {
     margin: 0;
 }
+.modal-content {
+    margin: auto;
+}
 /* PADDING */
 .nav, .nav a {
     padding: 1%;
 }
-.jumbo, .about, .portfolio, .resume, .footer {
+.jumbo, .about, .portfolio, .resume {
     padding: 5%;
+}
+.footer {
+    padding: 2% 5%;
 }
 .container {
     padding: 0;
     top: 0;
 }
 .container button {
-    padding: 0.5%;
+    padding: 0.5% 1%;
 }
 .middle-link {
     bottom: 0;
 }
-.resume-content {
-    padding: 0 1%;
+.about-content, .portfolio-content, .resume-content {
+    padding: 1%;
+}
+.modal-content {
+    padding: 2%;
+}
+.modal-x {
+    padding: 0 .5rem;
 }
 /* POSITIONING */
 .nav {
@@ -43,6 +55,22 @@ html, body, .nav, .jumbo, .about, .portfolio, .resume, .container, .footer {
 .container {
     position: relative;
 }
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+.modal-content {
+    position: relative;
+    top: 10%;
+    z-index: 6;
+}
+.modal-x {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
 /* SIZING, DISPLAY */
 html, body {
     width: 100%;
@@ -57,18 +85,27 @@ html, body {
 .container {
     height: 100%;
 }
-.about-content, .portfolio-content, .resume-content {
-    height: 75%;
+.right {
+    width: 1%;
+}
+.about-content, .portfolio-content, .resume-content, .modal {
+    height: 70%;
     overflow-y: scroll;
 }
 .about-content::-webkit-scrollbar, .portfolio-content::-webkit-scrollbar {
     display: none;
 }
-.container button {
-    width: 16rem;
-}
 .middle-link {
     width: 100%;
+}
+.modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.modal-content {
+    width: 80%;
+    overflow-x: scroll;
 }
 /* BACKGROUND */
 .nav  {
@@ -83,7 +120,6 @@ html, body {
 }
 .jumbo {
     background-color: #E3F2FD;
-    /* background-image: url("./images/blueBG.png"); */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -96,11 +132,17 @@ html, body {
 .resume {
     background-color: #BBDEFB;
 }
-.resume-content {
+.about-content, .portfolio-content, .resume-content {
     background-color: #FFF;
 }
 .footer {
     background-color: #1E88E5;
+}
+.modal {
+    background-color: #0005;
+}
+.modal-content {
+    background-color: #FFF;
 }
 /* PLAIN TEXT */
 html, body {
@@ -110,6 +152,9 @@ html, body {
     color: #FFF;
     font-size: 1rem;
     transition: .2s;
+}
+.right {
+    text-align: right;
 }
 .resume h4 {
     margin: 0;
@@ -124,7 +169,7 @@ a {
 .nav a {
     color: #FFF;
 }
-.container a {
+.container a, .modal a {
     color: #2962FF;
     text-align: center;
 }
@@ -135,20 +180,20 @@ a {
 }
 .middle-link {
     color: #1976D2;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
     transition: .2s;
 }
-.chevron-down {
-    /* INLINE */
-    stroke: #1976D2;
-    stroke-width: 2rem;
-    stroke-linecap: round;
+.modal-x {
+    font-size: 2rem;
 }
 .footer a {
     color: #E3F2FD;
 }
 /* HOVER AND FOCUS */
+a:hover {
+    cursor: pointer;
+}
 .nav:hover, .nav:focus {
     opacity: 1;
     transition: .1s;
@@ -162,7 +207,7 @@ a {
     border-bottom: 1px solid #448AFF;
     transition: .1s;
 }
-.container a:hover, .container a:focus {
+.container a:hover, .container a:focus, .modal-a:hover {
     color: #448AFF;
     border-bottom: 1px solid #448AFF;
 }
@@ -170,6 +215,10 @@ a {
     text-shadow: 0 0 1rem #FFF;
     background-color: #BBDEFB;
     background-color: #FFFFFF70;
+    transition: .1s;
+}
+.modal-x:hover {
+    background-color: #DDD;
     transition: .1s;
 }
 .footer a:hover {
@@ -207,4 +256,13 @@ td {
 .right-col {
     width: 40%;
     text-align: right;
+}
+.third-col {
+    width: 30%;
+    text-align: left;
+}
+/* SVG */
+.bar {
+    height: 1rem;
+    width: 100%;
 }
