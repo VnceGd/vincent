@@ -1,0 +1,43 @@
+/* Vincent Nguyen */
+/* Dec 2018 - Jan 2019 */
+/* https://vncegd.github.io/vincent/responsive.css */
+
+@media(max-width: 500px) {
+    .dropdown {
+        display: block;
+        padding: 1em;
+    }
+    .dropdown img {
+        height: 1em;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 3em;
+    }
+    .dropdown-content a {
+        float: none;
+        display: block;
+    }
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+    .dropdown span {
+        padding: 1em;
+    }
+    .nav {
+        padding: 0;
+    }
+    .nav-left {
+        display: none;
+    }
+}
+
+@media(min-width: 501px) {
+    .dropdown {
+        display: none;
+    }
+    .nav {
+        padding: 1em;
+    }
+}

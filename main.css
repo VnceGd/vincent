@@ -1,5 +1,5 @@
 /* Vincent Nguyen */
-/* September 2018 */
+/* Sept 2018 - Jan 2019 */
 /* https://vncegd.github.io/vincent/main.css */
 
 /* MARGINS */
@@ -10,30 +10,33 @@ html, body, .nav, .jumbo, .about, .portfolio, .resume, .container, .footer {
     margin: auto;
 }
 /* PADDING */
-.nav, .nav a {
-    padding: 1%;
+.nav a {
+    padding: 1em;
+}
+.nav-right a {
+    padding: 0;
 }
 .jumbo, .about, .portfolio, .resume {
-    padding: 5%;
+    padding: 2em 4em;
 }
 .footer {
-    padding: 2% 5%;
+    padding: 0.5em 1em;
 }
 .container {
     padding: 0;
     top: 0;
 }
 .container button {
-    padding: 0.5% 1%;
+    padding: 0.05em 0.1em;
 }
 .middle-link {
     bottom: 0;
 }
 .about-content, .portfolio-content, .resume-content {
-    padding: 1%;
+    padding: 1em;
 }
 .modal-content {
-    padding: 2%;
+    padding: 1em;
 }
 .modal-x {
     padding: 0 .5rem;
@@ -43,11 +46,14 @@ html, body, .nav, .jumbo, .about, .portfolio, .resume, .container, .footer {
     position: fixed;
     z-index: 10;
 }
+.jumbo {
+    top: 0;
+}
 .jumbo .container {
-    top: 30%;
+    top: 10em;
 }
 .jumbo .middle-link {
-    bottom: 30%;
+    bottom: 5em;
 }
 .middle-link {
     position: absolute;
@@ -63,7 +69,7 @@ html, body, .nav, .jumbo, .about, .portfolio, .resume, .container, .footer {
 }
 .modal-content {
     position: relative;
-    top: 10%;
+    top: 3em;
     z-index: 6;
 }
 .modal-x {
@@ -76,11 +82,14 @@ html, body {
     width: 100%;
     height: 100%;
 }
+.dropdown-content {
+    display: none;
+}
 .nav {
     width: 100%;
 }
 .jumbo, .about, .portfolio, .resume {
-    height: 85%;
+    height: 34em;
 }
 .container {
     height: 100%;
@@ -89,7 +98,7 @@ html, body {
     width: 1%;
 }
 .about-content, .portfolio-content, .resume-content, .modal {
-    height: 70%;
+    height: 24em;
     overflow-y: scroll;
 }
 .about-content::-webkit-scrollbar, .portfolio-content::-webkit-scrollbar {
@@ -106,6 +115,9 @@ html, body {
 .modal-content {
     width: 80%;
     overflow-x: scroll;
+}
+.chevron {
+    width: 1em;
 }
 /* BACKGROUND */
 .nav  {
@@ -132,6 +144,9 @@ html, body {
 .resume {
     background-color: #BBDEFB;
 }
+.odd-row {
+    background-color: #eee;
+}
 .about-content, .portfolio-content, .resume-content {
     background-color: #FFF;
 }
@@ -151,7 +166,6 @@ html, body {
 .nav {
     color: #FFF;
     font-size: 1rem;
-    transition: .2s;
 }
 .right {
     text-align: right;
@@ -196,7 +210,6 @@ a:hover {
 }
 .nav:hover, .nav:focus {
     opacity: 1;
-    transition: .1s;
 }
 .nav a:hover, .nav a:focus {
     background-color: #1976D2;
@@ -247,6 +260,7 @@ th {
     width: 32%;
 }
 td { 
+    height: 100%;
     width: 16%;
 }
 .left-col {
@@ -260,9 +274,4 @@ td {
 .third-col {
     width: 30%;
     text-align: left;
-}
-/* SVG */
-.bar {
-    height: 1rem;
-    width: 100%;
 }

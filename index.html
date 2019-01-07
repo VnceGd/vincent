@@ -1,23 +1,35 @@
 <!DOCTYPE html>
-<!-- Vincent Nguyen 2018 -->
+<!-- Vincent Nguyen 2018-2019 -->
 <!-- https://vncegd.github.io/vincent/index.html -->
+<!-- Icons: fontawesome.com -->
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Vincent Nguyen</title>
         <link rel="shortcut icon" href="images/v_favicon.png"/>
-        <!-- LINKS TO EXTERNAL RESOURCES -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <!-- EXTERNAL RESOURCES -->
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <!-- CSS STYLING -->
         <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="responsive.css">
     </head>
     <body>
         <!-- NAVIGATION BAR -->
         <div class="nav">
-            <a href="#jumbo">Home</a>
-            <a href="#about">About</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#resume">R&eacute;sum&eacute;</a>
+            <div class="dropdown">
+                <a href="#jumbo">Home</a>
+                <div class="dropdown-content">
+                    <a href="#about">About</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#resume">R&eacute;sum&eacute;</a>
+                </div>
+            </div>
+            <div class="nav-left">
+                <a href="#jumbo">Home</a>
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#resume">R&eacute;sum&eacute;</a>
+            </div>
         </div>
         <!-- JUMBOTRON -->
         <div class="jumbo" id="jumbo">
@@ -25,7 +37,7 @@
                 <h1>Vincent Nguyen</h1>
                 <h3>Web/Game Developer, College Student, PC Gamer</h3>
                 <a class="middle-link" href="#about">
-                    <i class="fas fa-chevron-down"></i>
+                    <img class="chevron" src="images/chevron-down.svg"/>
                 </a>
             </div>
         </div>
@@ -36,12 +48,17 @@
                 <div class="about-content">
                     <h3>Summary</h3>
                     <ul>
-                        <li>I'm a Pre-Junior (3rd Year) at Drexel University; Computer Science Major with a concentration in Game Programming and Development</li>
-                        <li>I hope to become independent game developer and/or designer</li>
-                        <li>I became interested in programming and art through my gaming experiences
+                        <li>I'm a Pre-Junior (3rd Year) at Drexel University
                             <ul>
-                                <li>I explored programming through web design and development</li>
-                                <li>I explored digital art through creation of pixel art in GIMP</li>
+                                <li>Computer Science Major with a concentration in Game Programming and Development</li>
+                                <li>I've been on one out of three co-ops (<a href="https://drexel.edu/difference/co-op/" target="_blank">Learn more</a>)</li>
+                            </ul>
+                        </li>
+                        <li>I hope to become an independent game developer and/or designer</li>
+                        <li>I gained interest in programming and art through my gaming experiences
+                            <ul>
+                                <li>I initially explored programming through web design and development</li>
+                                <li>I initially explored digital art through creation of pixel art in MS Paint and GIMP</li>
                             </ul>
                         </li>
                         <li>I enjoy playing computer games during my free time, mostly solo</li>
@@ -55,7 +72,7 @@
                     </ul>
                 </div>
                 <a class="middle-link" href="#portfolio">
-                    <i class="fas fa-chevron-down"></i>
+                    <img class="chevron" src="images/chevron-down.svg"/>
                 </a>
             </div>
         </div>
@@ -70,6 +87,11 @@
                     <li><a href="https://warframe.com">Warframe</a></li>
                     <li><a href="https://fortnite.com">Fortnite: Battle Royale</a></li>
                 </ul>
+                <h4>In-game Names</h4>
+                <ul>
+                    <li>VnceGd</li>
+                    <li>ZevinLevin</li>
+                </ul>
                 <h4>PC Specs (as of November 2018)</h4>
                 <h5><i>Note: This list is missing details.</i></h5>
                 <table>
@@ -77,11 +99,10 @@
                     <tr><td class="right">CPU:</td><td>Intel Core i5 750</td></tr>
                     <tr><td class="right">GPU:</td><td>NVIDIA GeForce GTX 760</td></tr>
                     <tr><td class="right">RAM:</td><td>2x2GB GSkill, 2x2GB Standard</td></tr>
-                    <tr><td class="right">PSU:</td><td>650W</td></tr>
+                    <tr><td class="right">PSU:</td><td>Corsair CX 750M</td></tr>
                     <tr><td class="right">HDD:</td><td>640GB Western Digital WD6401AALS-00J7B1</td></tr>
                     <tr><td class="right">Case:</td><td>Cooler Master HAF 912</td></tr>
-                    <tr><td class="right">Monitor 1:</td><td>Samsung SyncMaster SA350</td></tr>
-                    <tr><td class="right">Monitor 2:</td><td>Hannspree HF225</td></tr>
+                    <tr><td class="right">Monitor:</td><td>Samsung SyncMaster SA350</td></tr>
                     <tr><td class="right">Keyboard:</td><td>AZIO MKG1</td></tr>
                     <tr><td class="right">Mouse:</td><td>Etekcity Scroll S200</td></tr>
                     <tr><td class="right">Headphones:</td><td>Apple EarPods</td>
@@ -97,8 +118,8 @@
                 <h4>Software</h4>
                 <ul>
                     <p>Free</p>
-                    <li>2D: GIMP</li>
-                    <li>3D: Blender, Unity</li>
+                    <li>2D: GIMP, Gravit Designer</li>
+                    <li>3D: Blender</li>
                     <p>Educational Use</p>
                     <li>2D: Adobe Photoshop & Illustrator</li>
                     <li>3D: Autodesk Maya & Mudbox 2018</li>
@@ -122,19 +143,19 @@
                 <h4>Web Development</h4>
                 <ul>
                     <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>JQuery</li>
+                    <li>CSS, Bootstrap</li>
+                    <li>JavaScript, JQuery, AJAX, NodeJS</li>
+                    <li>MySQL</li>
                 </ul>
                 <h4>Other Languages</h4>
                 <ul>
-                    <li>Python</li>
+                    <li>Java</li>
                     <li>C++</li>
                     <li>C</li>
-                    <li>Java</li>
-                    <li>NodeJS</li>
-                    <li>MySQL</li>
+                    <li>Python</li>
                     <li>Bash</li>
+                    <li>C# (Unity)</li>
+                    <li>ALGOL</li>
                 </ul>
                 <h4>Environment</h4>
                 <ul>
@@ -158,6 +179,10 @@
                 <h4>Instruments</h4>
                 <ul>
                     <li>Piano</li>
+                </ul>
+                <h4>Dance</h4>
+                <ul>
+                    <li>B-boy</li>
                 </ul>
             </div>
         </div>
@@ -188,7 +213,7 @@
                     </p>
                 </div>
                 <a class="middle-link" href="#resume">
-                    <i class="fas fa-chevron-down"></i>
+                    <img class="chevron" src="images/chevron-down.svg"/>
                 </a>
             </div>
         </div>
@@ -196,14 +221,13 @@
         <div class="resume" id="resume">
             <div class="container">
                 <h1>Vincent's R&eacute;sum&eacute;</h1>
-                <a href="resume_sept_2018.pdf"><button>View as PDF</button></a>
+                <a href="resume.pdf"><button style="padding: 0.25em 2em">View as PDF</button></a>
                 <div class="resume-content">
                     <h3>Vincent Nguyen</h3>
                     <p>
                         Address: 477 Darby Paoli Rd. Paoli, PA, 19301 <br>
                         Email: vtn28@drexel.edu <br>
                         Phone: 484-557-2309 <br>
-                        Website: <a href="#">https://vncegd.github.io/vincent</a>
                     </p>
                     <h4>Education</h4>
                     <table>
@@ -227,98 +251,72 @@
                             <th class="third-col" colspan="2">Markup Languages</th>
                             <th class="third-col" colspan="2">Software</th>
                         </tr>
-                        <tr>
+                        <tr class="odd-row">
                             <td>JavaScript</td>
                             <td>
-                                <svg class="bar" viewbox="0 0 1000 100">
-                                    <polygon points="0,0 800,0 800,100 0,100"/>
-                                </svg>
+                                OOOOOOOO
                             </td>
                             <td>
                                 HTML
                             </td>
                             <td>
-                                <svg class="bar" viewbox="0 0 1000 100">
-                                    <polygon points="0,0 800,0 800,100 0,100"/>
-                                </svg>
+                                OOOOOOOO
                             </td>
                             <td>Github</td>
                             <td>
-                                <svg class="bar" viewbox="0 0 1000 100">
-                                    <polygon points="0,0 800,0 800,100 0,100"/>
-                                </svg>
+                                OOOOOOOO
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="even-row">
                             <td>Java</td>
                             <td>
-                                <svg class="bar" viewbox="0 0 1000 100">
-                                    <polygon points="0,0 600,0 600,100 0,100"/>
-                                </svg>
+                                OOOOOO
                             </td>
                             <td>CSS</td>
                             <td>
-                                <svg class="bar" viewbox="0 0 1000 100">
-                                    <polygon points="0,0 700,0 700,100 0,100"/>
-                                </svg>
+                                OOOOOOO
                             </td>
                             <td>Eclipse Photon</td>
                             <td>
-                                <svg class="bar" viewbox="0 0 1000 100">
-                                    <polygon points="0,0 600,0 600,100 0,100"/>
-                                </svg>
+                                OOOOOO
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="odd-row">
                             <td>C</td>
                             <td>
-                                <svg class="bar" viewbox="0 0 1000 100">
-                                    <polygon points="0,0 500,0 500,100 0,100"/>
-                                </svg>
+                                OOOOO
                             </td>
                             <td>LaTeX</td>
                             <td>
-                                <svg class="bar" viewbox="0 0 1000 100">
-                                    <polygon points="0,0 500,0 500,100 0,100"/>
-                                </svg>
+                                OOOOO
                             </td>
                             <td>Unity</td>
                             <td>
-                                <svg class="bar" viewbox="0 0 1000 100">
-                                    <polygon points="0,0 600,0 600,100 0,100"/>
-                                </svg>
+                                OOOOOO
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="even-row">
                             <td>Bash</td>
                             <td>
-                                <svg class="bar" viewbox="0 0 1000 100">
-                                    <polygon points="0,0 400,0 400,100 0,100"/>
-                                </svg>
+                                OOOO
                             </td>
                             <td></td>
                             <td></td>
                             <td>Autodesk Maya</td>
                             <td>
-                                <svg class="bar" viewbox="0 0 1000 100">
-                                    <polygon points="0,0 500,0 500,100 0,100"/>
-                                </svg>
+                                OOOOO
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="odd-row">
                             <td>C++</td>
                             <td>
-                                <svg class="bar" viewbox="0 0 1000 100">
-                                    <polygon points="0,0 300,0 300,100 0,100"/>
-                                </svg>
+                                OOO
                             </td>
                             <td></td>
                             <td></td>
                             <td>Xcode</td>
                             <td>
-                                <svg class="bar" viewbox="0 0 1000 100">
-                                    <polygon points="0,0 300,0 300,100 0,100"/>
-                                </svg>
+                                OOO
                             </td>
                         </tr>
                     </table>
@@ -359,7 +357,7 @@
                                 August 2018 to Present<br>
                                 <br>
                                 Direct Link<br>
-                                <a href="../random/index.html'">https://vncegd.github.io/random</a>
+                                <a href="../random/index.html">https://vncegd.github.io/random</a>
                             </td>
                         </tr>
                     </table>
@@ -397,8 +395,8 @@
                             <td>
                                 Software Design<br>
                                 Systems Architecture<br>
+                                Web and Mobile App Development<br>
                                 Computer Graphics Imagery I, II<br>
-                                Animation I<br>
                                 Overview of Computer Gaming
                             </td>
                         </tr>
@@ -426,8 +424,8 @@
                     <td style="text-align: center">
                         <a href="#jumbo">Back to Top</a>
                     </td>
-                    <td style="text-align: right">
-                        Vincent Nguyen | 2018
+                    <td style="text-align: right; color: #eee">
+                        Vincent Nguyen | 2018-2019
                     </td>
                 </tr>
             </table>
