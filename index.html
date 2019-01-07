@@ -51,7 +51,7 @@
                         <li>I'm a Pre-Junior (3rd Year) at Drexel University
                             <ul>
                                 <li>Computer Science Major with a concentration in Game Programming and Development</li>
-                                <li>I've been on one out of three co-ops (<a href="https://drexel.edu/difference/co-op/" target="_blank" rel="noopener">Learn more</a>)</li>
+                                <li>I've been on one out of three co-ops (<a href="https://drexel.edu/difference/co-op/" target="_blank">Learn more</a>)</li>
                             </ul>
                         </li>
                         <li>I hope to become an independent game developer and/or designer</li>
@@ -433,21 +433,8 @@
         <!-- SCRIPTS -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script async>
-        // Script from https://developers.google.com/web/fundamentals/primers/service-workers/
-        // Creates a service worker for Progressive Web App capabilities
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                navigator.serviceWorker.register('/sw.js').then(function(registration) {
-                    // Registration was successful
-                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
-                }, function(err) {
-                    // registration failed :(
-                    console.log('ServiceWorker registration failed: ', err);
-                });
-            });
-        }
-        // Script from w3schools.com/bootstrap/bootstrap_theme_company.asp
-        // Creates a smooth scrolling effect when links are clicked.
+        //Script from w3schools.com/bootstrap/bootstrap_theme_company.asp
+        //Creates a smooth scrolling effect when links are clicked.
         $(document).ready(function(){
             $(".nav a, .jumbo a[href='#about'], .about a[href='#portfolio'], .portfolio a[href='#resume'], .footer a[href='#jumbo']").on('click', function(event) {
                 event.preventDefault();
