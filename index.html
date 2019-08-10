@@ -6,7 +6,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Vincent Nguyen</title>
-        <link rel="shortcut icon" href="images/v_favicon.png"/>
+        <link rel="shortcut icon" href="images/favicon-vtn.png"/>
         <!-- EXTERNAL RESOURCES -->
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <!-- CSS STYLING -->
@@ -17,8 +17,9 @@
         <!-- NAVIGATION BAR -->
         <div class="nav">
             <div class="dropdown">
-                <a href="#jumbo">Home</a>
+                <a><img src="images/hamburger.svg"/></a>
                 <div class="dropdown-content">
+                    <a href="#jumbo">Home</a>
                     <a href="#about">About</a>
                     <a href="#portfolio">Portfolio</a>
                     <a href="#resume">R&eacute;sum&eacute;</a>
@@ -34,12 +35,14 @@
         <!-- JUMBOTRON -->
         <div class="jumbo" id="jumbo">
             <div class="container">
-                <h1>Vincent Nguyen</h1>
-                <h3>Web/Game Developer, College Student, PC Gamer</h3>
-                <a class="middle-link" href="#about">
-                    <img class="chevron" src="images/chevron-down.svg" alt="To About Section"/>
-                </a>
+                <div class="jumbo-content">
+                    <h1>Vincent Nguyen</h1>
+                    <h3>Gamer. Developer.</h3>
+                </div>
             </div>
+            <a class="middle-link" href="#about">
+                <img class="chevron" src="images/chevron-v.svg" alt="To About Section"/>
+            </a>
         </div>
         <!-- ABOUT SECTION -->
         <div class="about" id="about">
@@ -48,20 +51,19 @@
                 <div class="about-content">
                     <h3>Summary</h3>
                     <ul>
-                        <li>I'm a Pre-Junior (3rd Year) at Drexel University
+                        <li>I'm a rising Junior (4th year) at Drexel University
                             <ul>
                                 <li>Computer Science Major with a concentration in Game Programming and Development</li>
-                                <li>I've been on one out of three co-ops (<a href="https://drexel.edu/difference/co-op/" target="_blank">Learn more</a>)</li>
+                                <li>I'm on my second of three co-ops (<a href="https://drexel.edu/difference/co-op/" target="_blank">Learn more</a>)</li>
                             </ul>
                         </li>
-                        <li>I hope to become an independent game developer and/or designer</li>
-                        <li>I gained interest in programming and art through my gaming experiences
+                        <li>I hope to become an independent game developer</li>
+                        <li>I gained interest in programming and art through playing computer games
                             <ul>
                                 <li>I initially explored programming through web design and development</li>
                                 <li>I initially explored digital art through creation of pixel art in MS Paint and GIMP</li>
                             </ul>
                         </li>
-                        <li>I enjoy playing computer games during my free time, mostly solo</li>
                     </ul>
                     <h3>Hobbies and Interests</h3>
                     <ul>
@@ -71,10 +73,10 @@
                         <li><a onclick="toggleModal('music')">Music</a></li>
                     </ul>
                 </div>
-                <a class="middle-link" href="#portfolio">
-                    <img class="chevron" src="images/chevron-down.svg" alt="To Portfolio Section"/>
-                </a>
             </div>
+            <a class="middle-link" href="#portfolio">
+                <img class="chevron" src="images/chevron-v.svg" alt="To Portfolio Section"/>
+            </a>
         </div>
         <!-- COMPUTER GAMES MODAL -->
         <div class="modal" id="games">
@@ -85,27 +87,28 @@
                 <ul>
                     <li><a href="https://osu.ppy.sh">osu!</a></li>
                     <li><a href="https://warframe.com">Warframe</a></li>
-                    <li><a href="https://fortnite.com">Fortnite: Battle Royale</a></li>
+                    <li><a href="https://www.naturalselection2.com/">Natural Selection 2</a></li>
                 </ul>
                 <h4>In-game Names</h4>
                 <ul>
                     <li>VnceGd</li>
                     <li>ZevinLevin</li>
                 </ul>
-                <h4>PC Specs (as of November 2018)</h4>
-                <h5><i>Note: This list is missing details.</i></h5>
+                <h4>PC Specs (as of April 2019)</h4>
+                <h5><i>Note: This list is missing some details.</i></h5>
                 <table>
                     <tr><td class="right">Motherboard:</td><td>Gigabyte GA-P55A-UD4P</td></tr>
                     <tr><td class="right">CPU:</td><td>Intel Core i5 750</td></tr>
                     <tr><td class="right">GPU:</td><td>NVIDIA GeForce GTX 760</td></tr>
-                    <tr><td class="right">RAM:</td><td>2x2GB GSkill, 2x2GB Standard</td></tr>
+                    <tr><td class="right">RAM:</td><td>4x2GB DDR3</td></tr>
                     <tr><td class="right">PSU:</td><td>Corsair CX 750M</td></tr>
                     <tr><td class="right">HDD:</td><td>640GB Western Digital WD6401AALS-00J7B1</td></tr>
+                    <tr><td class="right">SSD:</td><td>500GB Crucial MX500</td></tr>
                     <tr><td class="right">Case:</td><td>Cooler Master HAF 912</td></tr>
                     <tr><td class="right">Monitor:</td><td>Samsung SyncMaster SA350</td></tr>
-                    <tr><td class="right">Keyboard:</td><td>AZIO MKG1</td></tr>
+                    <tr><td class="right">Keyboard:</td><td>Corsair K63 Compact - Cherry MX Red</td></tr>
                     <tr><td class="right">Mouse:</td><td>Etekcity Scroll S200</td></tr>
-                    <tr><td class="right">Headphones:</td><td>Apple EarPods</td>
+                    <tr><td class="right">Headphones:</td><td>Corsair HS60</td>
                     </tr>
                 </table>
             </div>
@@ -117,7 +120,7 @@
                 <h3>Digital Art</h3>
                 <h4>Software</h4>
                 <ul>
-                    <p>Free</p>
+                    <p>Personal Use (Free)</p>
                     <li>2D: GIMP, Gravit Designer</li>
                     <li>3D: Blender</li>
                     <p>Educational Use</p>
@@ -149,12 +152,12 @@
                 </ul>
                 <h4>Other Languages</h4>
                 <ul>
+                    <li>C# (Unity)</li>
                     <li>Java</li>
                     <li>C++</li>
                     <li>C</li>
                     <li>Python</li>
                     <li>Bash</li>
-                    <li>C# (Unity)</li>
                     <li>ALGOL</li>
                 </ul>
                 <h4>Environment</h4>
@@ -174,7 +177,7 @@
                     <li>Electronic</li>
                     <li>Chillstep</li>
                     <li>Japanese Rock and Pop</li>
-                    <li>(Check my <a href="https://osu.ppy.sh/users/4890690">osu! userpage</a> for specific songs. I typically don't listen to music on other platforms.)</li>
+                    <li>(You can get a good idea of songs I like by checking my favorite beatmaps on my <a href="https://osu.ppy.sh/users/4890690">osu! userpage</a>.)</li>
                 </ul>
                 <h4>Instruments</h4>
                 <ul>
@@ -191,41 +194,48 @@
             <div class="container">
                 <h1>Vincent's Portfolio</h1>
                 <div class="portfolio-content">
-                    <a href="../random/index.html">'Random' Website</a>
+                    <a href="https://github.com/vncegd">GitHub</a>
                     <p>
-                        A website containing games with random number generation, used as practice with JavaScript.
-                    </p>
-                    <a href="../pixelart/index.html">'Pixel Art' Website</a>
-                    <p>
-                        A website about Vincent Nguyen that contains a collection of pixel art created in high school.
-                    </p>
-                    <a href="../five/index.html">Five</a>
-                    <p>
-                        An experimental project featuring five pictures made with five-color palettes.
-                    </p>
-                    <a href="../dyschordia/index.html">Dyschordia</a>
-                    <p>
-                        A 2D action platforming game in which enemy attacks are synchronized with the background music; the final project of Computing and Informatics Design.
+                        Most of my projects can be found on my GitHub profile.<br>
+                        Some notable projects are listed below.
+                        <ul>
+                            <a href="../random/index.html">'Random' Website</a>
+                            <p>
+                                A website containing games with random number generation, used as practice with JavaScript.
+                            </p>
+                            <a href="../pixelart/index.html">'Pixel Art' Website</a>
+                            <p>
+                                A personal website that contains a collection of pixel art created in high school.
+                            </p>
+                            <a href="../five/index.html">Five</a>
+                            <p>
+                                An experimental project featuring five pictures made with five-color palettes.
+                            </p>
+                            <a href="../dyschordia/index.html">Dyschordia</a>
+                            <p>
+                                A 2D action platforming game in which enemy attacks are synchronized with the background music; the final project of Computing and Informatics Design.
+                            </p>
+                        </ul>
                     </p>
                     <a href="../portfolio/vtn28_finalProject.png">Time Burns Away</a>
                     <p>
                         An 800x1000 movie poster concept created in Adobe Illustrator as the final project of Digital Media.
                     </p>
                 </div>
-                <a class="middle-link" href="#resume">
-                    <img class="chevron" src="images/chevron-down.svg" alt="To Resume Section"/>
-                </a>
             </div>
+            <a class="middle-link" href="#resume">
+                <img class="chevron" src="images/chevron-v.svg" alt="To Resume Section"/>
+            </a>
         </div>
         <!-- RESUME SECTION -->
         <div class="resume" id="resume">
             <div class="container">
-                <h1>Vincent's R&eacute;sum&eacute;</h1>
-                <a href="resume.pdf"><button style="padding: 0.25em 2em">View as PDF</button></a>
+                <h1>Vincent's R&eacute;sum&eacute; <br>
+                    <a href="resume-2019.pdf"><button style="padding: 0.25em 2em">View as PDF</button></a>
+                </h1>
                 <div class="resume-content">
                     <h3>Vincent Nguyen</h3>
                     <p>
-                        Address: 477 Darby Paoli Rd. Paoli, PA, 19301 <br>
                         Email: vtn28@drexel.edu <br>
                         Phone: 484-557-2309 <br>
                     </p>
@@ -240,97 +250,70 @@
                             <td class="right-col">
                                 Philadelphia, PA<br>
                                 Anticipated Graduation: June 2021<br>
-                                Cumulative GPA: 3.60
+                                Cumulative GPA: 3.52
                             </td>
                         </tr>
                     </table>
                     <h4>Skills</h4>
                     <table>
                         <tr>
-                            <th class="third-col" colspan="2">Programming Languages</th>
-                            <th class="third-col" colspan="2">Markup Languages</th>
-                            <th class="third-col" colspan="2">Software</th>
+                            <th class="quarter-col" style="background-color:#155">Web Dev. & Design</th>
+                            <th class="quarter-col" style="background-color:#255">Game/Art Production</th>
+                            <th class="quarter-col" style="background-color:#355">Programming</th>
+                            <th class="quarter-col" style="background-color:#455">Misc.</th>
                         </tr>
-                        <tr class="odd-row">
-                            <td>JavaScript</td>
-                            <td>
-                                OOOOOOOO
-                            </td>
-                            <td>
-                                HTML
-                            </td>
-                            <td>
-                                OOOOOOOO
-                            </td>
-                            <td>Github</td>
-                            <td>
-                                OOOOOOOO
-                            </td>
-                        </tr>
-                        <tr class="even-row">
-                            <td>Java</td>
-                            <td>
-                                OOOOOO
-                            </td>
-                            <td>CSS</td>
-                            <td>
-                                OOOOOOO
-                            </td>
-                            <td>Eclipse Photon</td>
-                            <td>
-                                OOOOOO
-                            </td>
-                        </tr>
-                        <tr class="odd-row">
-                            <td>C</td>
-                            <td>
-                                OOOOO
-                            </td>
-                            <td>LaTeX</td>
-                            <td>
-                                OOOOO
-                            </td>
-                            <td>Unity</td>
-                            <td>
-                                OOOOOO
-                            </td>
-                        </tr>
-                        <tr class="even-row">
-                            <td>Bash</td>
-                            <td>
-                                OOOO
-                            </td>
-                            <td></td>
-                            <td></td>
-                            <td>Autodesk Maya</td>
-                            <td>
-                                OOOOO
-                            </td>
-                        </tr>
-                        <tr class="odd-row">
-                            <td>C++</td>
-                            <td>
-                                OOO
-                            </td>
-                            <td></td>
-                            <td></td>
-                            <td>Xcode</td>
-                            <td>
-                                OOO
-                            </td>
+                        <tr>
+                            <td><ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript, jQuery</li>
+                                <li>SVG</li>
+                            </ul></td>
+                            <td><ul>
+                                <li>Unity C#</li>
+                                <li>Photoshop, GIMP</li>
+                                <li>Maya, Blender</li>
+                                <li>Illustrator</li>
+                            </ul></td>
+                            <td><ul>
+                                <li>Python</li>
+                                <li>Java</li>
+                                <li>C</li>
+                                <li>C++</li>
+                            </ul></td>
+                            <td><ul>
+                                <li>Git</li>
+                                <li>Linux (Gnome)</li>
+                                <li>JIRA</li>
+                                <li>ALGOL/NEWP</li>
+                            </ul></td>
                         </tr>
                     </table>
-                    <h4>Employment History</h4>
+                    <h4>Experience</h4>
                     <table>
                         <tr>
                             <td class="left-col">
                                 Unisys Corporation<br>
-                                <b>Software Engineering Co-op</b><br>
+                                <b>Software Engineer Co-op</b><br>
+                                <ul>
+                                    <li>Added support for Diffie-Hellman RSA ciphers, Elliptic Curve Cryptography</li>
+                                    <li>Researched network security through RFCs and internal design documents</li>
+                                    <li>Assisted with research and installation of FTP clients for testing</li>
+                                </ul>
+                            </td>
+                            <td class="right-col">
+                                Malvern/Blue Bell, PA<br>
+                                April to September 2019
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="left-col">
+                                Unisys Corporation<br>
+                                <b>Software Engineer Co-op</b><br>
                                 <ul>
                                     <li>Learned the ALGOL programming language and MCP operating system</li>
                                     <li>Maintained well commented and documented patches for peer review</li>
                                     <li>Improved file analysis in program dumps for easier extraction of information</li>
-                                    <li>Adapted existing technologies into an Agile methodology</li>
                                 </ul>
                             </td>
                             <td class="right-col">
@@ -343,75 +326,74 @@
                     <table>
                         <tr>
                             <td class="left-col">
-                                Game Website<br>
-                                <b>Independent Web and Game Developer</b><br>
+                                Random<br>
+                                <b>Web/Game Developer</b><br>
                                 <ul>
                                     <li>Draw inspiration from existing games and websites to establish guidelines</li>
                                     <li>Style responsiveness into page layouts with Cascading Style Sheets</li>
                                     <li>Practice implementation of game rules and logic with JavaScript</li>
-                                    <li>Deploy website with comprehensible source code on Github pages</li>
                                 </ul>
                             </td>
                             <td class="right-col">
                                 Paoli, PA<br>
                                 August 2018 to Present<br>
                                 <br>
-                                Direct Link<br>
-                                <a href="../random/index.html">https://vncegd.github.io/random</a>
+                                <a class="project-link" href="../random/index.html">vncegd.github.io/random</a>
+                                <a class="project-link-icon" href="../random/index.html"><img src="./images/link-icon.svg"/></a>
                             </td>
                         </tr>
-                    </table>
-                    <table>
                         <tr>
                             <td class="left-col">
-                                Computing and Informatics Design Project<br>
+                                Dyschordia<br>
                                 <b>Game Programmer and Concept Artist</b><br>
                                 <ul>
                                     <li>Collaborated with team members to produce a 2D platforming game</li>
                                     <li>Innovated unique concepts integrating music into the combat</li>
                                     <li>Organized tasks using a Gantt chart and waterfall methodology</li>
-                                    <li>Presented playable prototypes of game which included multiple dungeon areas</li>
                                 </ul>
                             </td>
                             <td class="right-col">
                                 Philadelphia, PA<br>
                                 January to June 2017<br>
                                 <br>
-                                Direct Link<br>
-                                <a href="../dyschordia/index.html">https://vncegd.github.io/dyschordia</a>
+                                <a class="project-link" href="../dyschordia/index.html">vncegd.github.io/dyschordia</a>
+                                <a class="project-link-icon" href="../dyschordia/index.html"><img src="./images/link-icon.svg"/></a>
                             </td>
                         </tr>
                     </table>
                     <h4>Relevant Coursework</h4>
                     <table>
                         <tr>
-                            <td>
-                                Computing and Informatics Design I, II, III<br>
-                                Systems Programming<br>
+                            <td class="half-col" style="background-color:#255">
+                                Data Structures<br>
                                 Mathematical Foundations of Computer Science<br>
-                                Discrete Mathematics<br>
-                                Advanced Programming Techniques
-                            </td>
-                            <td>
-                                Software Design<br>
+                                Systems Programming<br>
                                 Systems Architecture<br>
+                                Programming Language Concepts
+                            </td>
+                            <td class="half-col" style="background-color:#455">
+                                Software Design<br>
+                                Software Engineering<br>
                                 Web and Mobile App Development<br>
                                 Computer Graphics Imagery I, II<br>
-                                Overview of Computer Gaming
+                                Experimental Games
                             </td>
                         </tr>
                     </table>
                     <h4>Honors and Awards</h4>
                     <table>
                         <tr>
-                            <td>
+                            <td class="full-col">
                                 A.J. Drexel Scholarship, Drexel University, 2016 - Present<br>
-                                Dean's List, Drexel University, 2016 - 2017
+                                Dean's List, Drexel University, 2016 - 2017, 2019
                             </td>
                         </tr>
                     </table>
                 </div>
             </div>
+            <!-- <a class="middle-link" href="#footer">
+                <img class="chevron" src="images/chevron-v.svg" alt="To Footer Section"/>
+            </a> -->
         </div>
         <!-- FOOTER -->
         <div class="footer" id="footer">
@@ -436,7 +418,7 @@
         //Script from w3schools.com/bootstrap/bootstrap_theme_company.asp
         //Creates a smooth scrolling effect when links are clicked.
         $(document).ready(function(){
-            $(".nav a, .jumbo a[href='#about'], .about a[href='#portfolio'], .portfolio a[href='#resume'], .footer a[href='#jumbo']").on('click', function(event) {
+            $(".nav-left a, .dropdown-content a, .jumbo a[href='#about'], .about a[href='#portfolio'], .portfolio a[href='#resume'], .resume a[href='#footer'], .footer a[href='#jumbo']").on('click', function(event) {
                 event.preventDefault();
                 var hash = this.hash;
                 $('html, body').animate({

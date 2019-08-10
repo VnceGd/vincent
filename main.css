@@ -3,28 +3,38 @@
 /* https://vncegd.github.io/vincent/main.css */
 
 /* MARGINS */
-html, body, .nav, .jumbo, .about, .portfolio, .resume, .container, .footer {
+html, body,
+.nav, .jumbo, .about, .portfolio, .resume, .container, .footer,
+.resume h4 {
     margin: 0;
 }
+.container,
+.jumbo-content,
 .modal-content {
     margin: auto;
 }
 /* PADDING */
+.about h1,
+.portfolio h1,
+.resume h1 {
+    margin: 0;
+    padding: 6rem 1rem 2rem 1rem;
+}
 .nav a {
     padding: 1em;
 }
 .nav-right a {
     padding: 0;
 }
-.jumbo, .about, .portfolio, .resume {
-    padding: 2em 4em;
-}
 .footer {
     padding: 0.5em 1em;
 }
 .container {
-    padding: 0;
+    padding-bottom: 2.5rem;
     top: 0;
+}
+.jumbo .container {
+    padding-top: 5%;
 }
 .container button {
     padding: 0.05em 0.1em;
@@ -32,34 +42,27 @@ html, body, .nav, .jumbo, .about, .portfolio, .resume, .container, .footer {
 .middle-link {
     bottom: 0;
 }
-.about-content, .portfolio-content, .resume-content {
-    padding: 1em;
-}
-.modal-content {
+.about-content, .portfolio-content, .resume-content,
+.modal-content,
+.left-col, .right-col, .quarter-col, .half-col, .full-col {
     padding: 1em;
 }
 .modal-x {
-    padding: 0 .5rem;
+    padding: 0 .6rem;
 }
 /* POSITIONING */
 .nav {
     position: fixed;
     z-index: 10;
 }
-.jumbo {
-    top: 0;
+.jumbo, .about, .portfolio, .resume, .container {
+    position: relative;
 }
-.jumbo .container {
-    top: 10em;
-}
-.jumbo .middle-link {
-    bottom: 5em;
+.about-content, .portfolio-content, .resume-content {
+    position: relative;
 }
 .middle-link {
     position: absolute;
-}
-.container {
-    position: relative;
 }
 .modal {
     position: fixed;
@@ -69,7 +72,7 @@ html, body, .nav, .jumbo, .about, .portfolio, .resume, .container, .footer {
 }
 .modal-content {
     position: relative;
-    top: 3em;
+    top: 3.2rem;
     z-index: 6;
 }
 .modal-x {
@@ -88,18 +91,23 @@ html, body {
 .nav {
     width: 100%;
 }
-.jumbo, .about, .portfolio, .resume {
-    height: 34em;
+.jumbo {
+    height: 100%;
+}
+.jumbo .container {
+    display: flex;
+    height: 80%;
 }
 .container {
-    height: 100%;
+    width: 80%;
+    overflow-y: hidden;
 }
 .right {
     width: 1%;
 }
 .about-content, .portfolio-content, .resume-content, .modal {
-    height: 24em;
-    overflow-y: scroll;
+    bottom: 0;
+    overflow-y: auto;
 }
 .about-content::-webkit-scrollbar, .portfolio-content::-webkit-scrollbar {
     display: none;
@@ -114,7 +122,6 @@ html, body {
 }
 .modal-content {
     width: 80%;
-    overflow-x: scroll;
 }
 .chevron {
     width: 1em;
@@ -131,50 +138,58 @@ html, body {
     background-color: #E3F2FD;
 }
 .jumbo {
-    background-color: #E3F2FD;
+    background-color: #111;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-image: url(./images/bg-vtn.svg);
 }
-.about {
-    background-color: #BBDEFB;
+.about h1,
+.portfolio h1,
+.resume h1 {
+    background-color: #222;
 }
-.portfolio {
-    background-color: #E3F2FD;
-}
+.about,
+.portfolio,
 .resume {
-    background-color: #BBDEFB;
+    background-color: #111;
 }
-.odd-row {
-    background-color: #eee;
-}
-.about-content, .portfolio-content, .resume-content {
-    background-color: #FFF;
+.about-content,
+.resume-content, 
+.portfolio-content {
+    background-color: #555;
 }
 .footer {
-    background-color: #1E88E5;
+    background-color: #333;
 }
 .modal {
     background-color: #0005;
 }
 .modal-content {
-    background-color: #FFF;
+    background-color: #444;
+}
+.left-col {
+    background-color: #255;
+}
+.right-col, .full-col {
+    background-color: #455;
 }
 /* PLAIN TEXT */
 html, body {
     font-family: 'Lato', sans-serif;
+    color: #fff;
 }
 .nav {
-    color: #FFF;
     font-size: 1rem;
+}
+.jumbo h1, .jumbo h3 {
+    text-align: center;
 }
 .right {
     text-align: right;
 }
-.resume h4 {
-    margin: 0;
-}
 .footer {
-    color: #FFF;
+    color: #fff;
 }
 /* LINK TEXT */
 a {
@@ -184,7 +199,7 @@ a {
     color: #FFF;
 }
 .container a, .modal a {
-    color: #2962FF;
+    color: #0ff;
     text-align: center;
 }
 .container button {
@@ -193,10 +208,13 @@ a {
     transition: .2s;
 }
 .middle-link {
-    color: #1976D2;
+    background-color: #1111;
     font-size: 2rem;
     text-align: center;
     transition: .2s;
+}
+.project-link-icon img {
+    width: 1rem;
 }
 .modal-x {
     font-size: 2rem;
@@ -206,6 +224,7 @@ a {
 }
 /* HOVER AND FOCUS */
 a:hover {
+    text-decoration: underline;
     cursor: pointer;
 }
 .nav:hover, .nav:focus {
@@ -213,6 +232,7 @@ a:hover {
 }
 .nav a:hover, .nav a:focus {
     background-color: #1976D2;
+    text-decoration: none;
     transition: .1s;
 }
 .container button:hover, .container button:focus {
@@ -220,23 +240,16 @@ a:hover {
     border-bottom: 1px solid #448AFF;
     transition: .1s;
 }
-.container a:hover, .container a:focus, .modal-a:hover {
-    color: #448AFF;
-    border-bottom: 1px solid #448AFF;
-}
 .middle-link:hover, .middle-link:focus {
-    text-shadow: 0 0 1rem #FFF;
-    background-color: #BBDEFB;
-    background-color: #FFFFFF70;
+    background-color: #2229;
     transition: .1s;
 }
 .modal-x:hover {
-    background-color: #DDD;
+    background-color: #555;
     transition: .1s;
 }
 .footer a:hover {
     color: #FFF;
-    border-bottom: 1px solid #FFF;
 }
 /* ACTIVE */
 .nav a:active {
@@ -264,14 +277,15 @@ td {
     width: 16%;
 }
 .left-col {
-    width: 60%;
-    text-align: left;
+    width: 75%;
 }
 .right-col {
-    width: 40%;
+    width: 25%;
     text-align: right;
 }
-.third-col {
-    width: 30%;
-    text-align: left;
+.quarter-col {
+    width: 25%;
+}
+.half-col {
+    width: 50%;
 }
