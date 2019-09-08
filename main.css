@@ -163,16 +163,10 @@ html, body {
     background-color: #333;
 }
 .modal {
-    background-color: #0005;
+    background-color: #000a;
 }
 .modal-content {
     background-color: #444;
-}
-.left-col {
-    background-color: #255;
-}
-.right-col, .full-col {
-    background-color: #455;
 }
 /* PLAIN TEXT */
 html, body {
@@ -288,4 +282,13 @@ td {
 }
 .half-col {
     width: 50%;
+}
+
+.modal-content {
+    animation-name: fade-in;
+    animation-duration: 0.4s
+}
+@keyframes fade-in {
+    from {top: 6rem; opacity: 0}
+    to {top: 3.2rem; opacity: 1}
 }
