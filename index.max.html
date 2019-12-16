@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<!-- Vincent Nguyen 2018-2019 -->
+<!-- https://vncegd.github.io/vincent/index.html -->
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>Vincent Nguyen</title>
+        <link rel="shortcut icon" href="images/favicon-vtn.png"/>
+        <!-- EXTERNAL RESOURCES -->
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <!-- CSS STYLING -->
+        <link rel="stylesheet" href="main.min.css">
+        <link rel="stylesheet" href="responsive.min.css">
+    </head>
+    <body>
+        <!-- NAVIGATION BAR -->
+        <div class="nav">
+            <div class="dropdown">
+                <a onclick="toggleNavDropdownContent()" tabindex="0"><img src="images/hamburger.svg" alt="Navigation dropdown button"/></a>
+                <div class="dropdown-content" id="nav-dropdown-content">
+                    <a href="#jumbo">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#resume">R&eacute;sum&eacute;</a>
+                </div>
+            </div>
+            <div class="nav-left">
+                <a class="active" href="#jumbo">Home</a>
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#resume">R&eacute;sum&eacute;</a>
+            </div>
+        </div>
+        <!-- JUMBOTRON -->
+        <div class="jumbo" id="jumbo">
+            <div class="container">
+                <div class="jumbo-content">
+                    <h1>Vincent Nguyen</h1>
+                    <h3>Gamer. Developer.</h3>
+                </div>
+            </div>
+            <a class="middle-link" href="#about">
+                <img class="chevron" src="images/chevron-v.svg" alt="To About Section"/>
+            </a>
+        </div>
+        <!-- ABOUT SECTION -->
+        <div class="about" id="about">
+            <div class="container">
+                <h1>About Vincent</h1>
+                <div class="about-content">
+                    <h3>Summary</h3>
+                    <ul>
+                        <li>Junior (4th year) at Drexel University
+                            <ul>
+                                <li>Computer Science Major with a concentration in Game Programming and Development</li>                                
+                            </ul>
+                        </li>
+                        <li>Aspiring independent game developer</li>
+                        <li>Experienced in Unity scripting and UI development; some experience with 3D art, level design, project management</li>
+                        <li>Pixel art and logo design hobbyist</li>
+                    </ul>
+                    <h3>Hobbies and Interests</h3>
+                    <ul>
+                        <li><a onclick="toggleModal('games')" tabindex="0">Computer Games</a></li>
+                        <li><a onclick="toggleModal('digital-art')" tabindex="0">Digital Art</a></li>
+                        <li><a onclick="toggleModal('programming')" tabindex="0">Programming</a></li>
+                        <li><a onclick="toggleModal('music')" tabindex="0">Music</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a class="middle-link" href="#portfolio">
+                <img class="chevron" src="images/chevron-v.svg" alt="To Portfolio Section"/>
+            </a>
+        </div>
+        <!-- COMPUTER GAMES MODAL -->
+        <div class="modal" id="games">
+            <div class="modal-content">
+                <a class="modal-x" onclick="toggleModal('games')">&times;</a>
+                <h3>Computer Games</h3>
+                <h4>Recently Played</h4>
+                <ul>
+                    <li><a href="https://osu.ppy.sh" target="_blank">osu!</a> (<a href="https://osu.ppy.sh/users/4890690" target="_blank">Profile</a>)</li>                    
+                    <li><a href="https://warframe.com" target="_blank">Warframe</a></li>
+                    <li><a href="https://minecraft.net" target="_blank">Minecraft</a></li>
+                </ul>
+                <h4>In-game Names</h4>
+                <ul>
+                    <li>VnceGd</li>
+                    <li>ZevinLevin</li>
+                </ul>
+                <h4>PC Specs (Last updated September 2019)</h4>
+                <table>
+                    <tr><td class="right">Motherboard:</td><td>Gigabyte GA-P55A-UD4P</td></tr>
+                    <tr><td class="right">CPU:</td><td>Intel Core i5 750</td></tr>
+                    <tr><td class="right">GPU:</td><td>NVIDIA GeForce GTX 760</td></tr>
+                    <tr><td class="right">RAM:</td><td>4x2GB DDR3</td></tr>
+                    <tr><td class="right">PSU:</td><td>Corsair CX 750M</td></tr>
+                    <tr><td class="right">HDD:</td><td>640GB Western Digital WD6401AALS-00J7B1</td></tr>
+                    <tr><td class="right">SSD:</td><td>500GB Crucial MX500</td></tr>
+                    <tr><td class="right">Case:</td><td>Cooler Master HAF 912</td></tr>
+                    <tr><td class="right">Monitor:</td><td>Samsung SyncMaster SA350</td></tr>
+                    <tr><td class="right">Keyboard:</td><td>Corsair K63 Compact - Cherry MX Red</td></tr>
+                    <tr><td class="right">Mouse:</td><td>Etekcity Scroll S200</td></tr>
+                    <tr><td class="right">Headphones:</td><td>Corsair HS60</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- DIGITAL ART MODAL -->
+        <div class="modal" id="digital-art">
+            <div class="modal-content">
+                <a class="modal-x" onclick="toggleModal('digital-art')">&times;</a>
+                <h3>Digital Art</h3>
+                <h4>Software</h4>
+                <ul>
+                    <p>Personal Use (Free)</p>
+                    <li>2D: GIMP, VSCode (for SVG)</li>
+                    <li>3D: Blender</li>
+                    <p>Educational Use</p>
+                    <li>2D: Adobe Photoshop & Illustrator</li>
+                    <li>3D: Autodesk Maya</li>
+                </ul>
+                <h4>Platforms</h4>
+                <ul>
+                    <li><a href="https://vncegd.imgur.com" target="_blank">Imgur</a></li>
+                    <li><a href="https://facebook.com/16nguyenv" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com/16nguyenv" target="_blank">Twitter</a></li>
+                    <li><a href="https://instagram.com/zevinlevin" target="_blank">Instagram</a></li>
+                </ul>
+                <h4>Photography</h4>
+                <ul>
+                    <li>Camera: Nikon D3400</li>
+                    <li>Phone: Samsung Galaxy S10+</li>
+                </ul>
+            </div>
+        </div>
+        <!-- PROGRAMMING MODAL -->
+        <div class="modal" id="programming">
+            <div class="modal-content">
+                <a class="modal-x" onclick="toggleModal('programming')">&times;</a>
+                <h3>Programming</h3>
+                <h4>Languages</h4>
+                <ul>
+                    <li>JavaScript, jQuery</li>
+                    <li>C# (Unity)</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>C</li>
+                    <li>ALGOL/NEWP</li>
+                </ul>
+                <h4>Environment</h4>
+                <ul>
+                    <li>macOSX (Catalina)</li>
+                    <li>Visual Studio Code</li>
+                    <li>Vim (on Drexel Tux servers)</li>
+                </ul>
+            </div>
+        </div>
+        <!-- MUSIC MODAL -->
+        <div class="modal" id="music">
+            <div class="modal-content">
+                <a class="modal-x" onclick="toggleModal('music')">&times;</a>
+                <h3>Music</h3>
+                <h4>Favorite Genres</h4>
+                <ul>
+                    <li>Drum & Bass</li>
+                    <li>Electronic</li>
+                    <li>Chillstep</li>
+                    <li>Japanese Rock and Pop</li>
+                </ul>
+                (You can get a good idea of songs I like by checking my favorite beatmaps on my <a href="https://osu.ppy.sh/users/4890690" target="_blank">osu! profile page</a>)
+                <h4>Instruments</h4>
+                <ul>
+                    <li>Piano</li>
+                </ul>
+                <h4>Dance</h4>
+                <ul>
+                    <li>B-boy/Breaking</li>
+                </ul>
+            </div>
+        </div>
+        <!-- PORTFOLIO SECTION -->
+        <div class="portfolio" id="portfolio">
+            <div class="container">
+                <h1>Vincent's Portfolio</h1>
+                <div class="portfolio-content">
+                    <a href="https://area52p.com" target="_blank">Cow-duction: The Milkening</a>
+                    <p>
+                        An in-development game being produced for the Drexel Voyager motion platform in Game Development Workshop.
+                    </p>
+                    <a href="https://github.com/vncegd" target="_blank">GitHub</a>
+                    <p>
+                        Most of my projects can be found on my GitHub profile.<br>
+                        Some notable projects are listed below.
+                        <ul>
+                            <a href="../random/index.html" target="_blank">'Random' Game Hub</a>
+                            <p>
+                                A website containing games with random number generation.
+                            </p>
+                            <a href="../pixelart/index.html" target="_blank">Pixel Art</a>
+                            <p>
+                                A personal website that contains a collection of pixel art created in high school.
+                            </p>
+                            <a href="../five/index.html" target="_blank">Five</a>
+                            <p>
+                                An experimental project featuring five pictures made using five-color palettes.
+                            </p>
+                            <a href="https://vncegd.github.io/Double-Time-Dash" target="_blank">Double Time Dash</a>
+                            <p>
+                                A 3D plaform-racing game made in Unity as the final project of Computer Game Design & Development.
+                            </p>
+                            <a href="../dyschordia/index.html" target="_blank">Dyschordia</a>
+                            <p>
+                                A 2D action-platformer game made in Unity as the final project of Computing and Informatics Design.
+                            </p>
+                        </ul>
+                    </p>
+                    <a href="../portfolio/vtn28_finalProject.png" target="_blank">Time Burns Away</a>
+                    <p>
+                        An 800x1000 movie poster concept created in Adobe Illustrator as the final project of Digital Media.
+                    </p>
+                </div>
+            </div>
+            <a class="middle-link" href="#resume">
+                <img class="chevron" src="images/chevron-v.svg" alt="To Resume Section"/>
+            </a>
+        </div>
+        <!-- RESUME SECTION -->
+        <div class="resume" id="resume">
+            <div class="container">
+                <h1>Vincent's R&eacute;sum&eacute; <br>
+                    <a href="resume.pdf" target="_blank"><button style="padding: 0.25em 2em">View PDF</button></a>
+                </h1>
+                <div class="resume-content">
+                    <h3>Vincent Nguyen</h3>
+                    <p>
+                        Email: vtn28@drexel.edu <br>
+                        Phone: 484-557-2309 <br>
+                    </p>
+                    <hr>
+                    <h4>Education</h4>
+                    <table>
+                        <tr>
+                            <td class="half-col">
+                                Drexel University<br>
+                                Bachelor of Science in Computer Science<br>
+                                Game Programming and Development Concentration
+                            </td>
+                            <td class="half-col">
+                                Philadelphia, PA<br>
+                                Anticipated Graduation: June 2021<br>
+                                Cumulative GPA: 3.52
+                            </td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <h4>Skills</h4>
+                    <table>
+                        <tr>
+                            <th class="quarter-col">Web Dev & Design</th>
+                            <th class="quarter-col">Game/Art Production</th>
+                            <th class="quarter-col">Programming</th>
+                            <th class="quarter-col">Miscellaneous</th>
+                        </tr>
+                        <tr>
+                            <td><ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript, jQuery</li>
+                                <li>SVG</li>
+                            </ul></td>
+                            <td><ul>
+                                <li>Unity C#</li>
+                                <li>Photoshop, GIMP</li>
+                                <li>Maya, Blender</li>
+                                <li>Illustrator</li>
+                            </ul></td>
+                            <td><ul>
+                                <li>Python</li>
+                                <li>Java</li>
+                                <li>C, C++</li>
+                                <li>ALGOL/NEWP</li>
+                            </ul></td>
+                            <td><ul>
+                                <li>Git</li>
+                                <li>Linux (Gnome)</li>
+                                <li>TLS/SSL</li>
+                                <li>Agile Scrum</li>
+                            </ul></td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <h4>Experience</h4>
+                    <table>
+                        <tr>
+                            <td class="left-col">
+                                Unisys Corporation<br>
+                                <b>Software Engineer (MCP Security) Co-op</b><br>
+                                <ul>
+                                    <li>Researched and implemented RFCs and internal design documents relating to Diffie-Hellman RSA ciphers and Elliptic Curve Cryptography for TLS 1.2</li>
+                                    <li>Tested CNSA compliance of implementations with FTP/SSL clients and servers</li>
+                                </ul>
+                            </td>
+                            <td class="right-col">
+                                Malvern/Blue Bell, PA<br>
+                                Apr - Sept 2019
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="left-col">
+                                Unisys Corporation<br>
+                                <b>Software Engineer (MCP Core) Co-op</b><br>
+                                <ul>
+                                    <li>Enhanced the dump analysis software of the MCP operating system by analyzing and displaying file and task attributes in a human readable format</li>
+                                    <li>Adapted to proprietary tools for patch management and peer review</li>
+                                </ul>
+                            </td>
+                            <td class="right-col">
+                                Malvern, PA<br>
+                                Apr - Sept 2018
+                            </td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <h4>Projects</h4>
+                    <table>
+                        <tr>
+                            <td class="left-col">
+                                Cow-duction: The Milkening<br>
+                                <b>UI Designer & Programmer</b><br>
+                                <ul>
+                                    <li>Collaborate in a team of 7 to produce an interactive theme park ride in Unity for the Voyager motion platform at Drexel University</li>
+                                    <li>Prototype and present weekly iterations following an Agile scrum methodology</li>
+                                </ul>
+                            </td>
+                            <td class="right-col">
+                                Philadelphia, PA<br>
+                                Sept 2019 - Present<br>
+                                <br>
+                                <a class="project-link" href="https://area52p.com" target="_blank">area52p.com</a>
+                                <a class="project-link-icon" href="https://area52p.com" target="_blank"><img src="./images/link-icon.svg" alt="Link to area52p.com"/></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="left-col">
+                                "Random" Game Hub<br>
+                                <b>Website Designer & Game Developer</b><br>
+                                <ul>
+                                    <li>Develop four HTML/CSS/JavaScript games with minimalist, responsive design</li>
+                                    <li>Host games on a Github page that acts as a hub and includes four random number generators themed around casino games</li>
+                                </ul>
+                            </td>
+                            <td class="right-col">
+                                Paoli, PA<br>
+                                Aug 2018 - Aug 2019<br>
+                                <br>
+                                <a class="project-link" href="../random/index.html" target="_blank">vncegd.github.io/random</a>
+                                <a class="project-link-icon" href="../random/index.html" target="_blank"><img src="./images/link-icon.svg" alt="Link to vncegd.github.io/random"/></a>
+                            </td>
+                        </tr>                        
+                    </table>
+                    <hr>
+                    <h4>Relevant Coursework</h4>
+                    <table>
+                        <tr>
+                            <td class="half-col">
+                                Data Structures<br>
+                                Mathematical Foundations of Computer Science<br>
+                                Systems Programming<br>
+                                Systems Architecture<br>
+                                Programming Language Concepts
+                            </td>
+                            <td class="half-col">
+                                Software Design<br>
+                                Software Engineering<br>
+                                Web and Mobile App Development<br>
+                                Computer Graphics Imagery I, II<br>
+                                Experimental Game Development
+                            </td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <h4>Honors and Awards</h4>
+                    <table>
+                        <tr>
+                            <td class="full-col">
+                                A.J. Drexel Scholarship, Drexel University, 2016 - Present<br>
+                                Dean's List, Drexel University, 2016 - 2017, 2019
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <div class="footer" id="footer">
+            <table>
+                <tr>
+                    <td>
+                        <a href="https://github.com/vncegd" target="_blank">Github</a> | 
+                        <a href="https://linkedin.com/in/vtn28" target="_blank">LinkedIn</a>
+                    </td>
+                    <td style="text-align: center">
+                        <a href="#jumbo">Back to Top</a>
+                    </td>
+                    <td style="text-align: right">
+                        Vincent Nguyen | 2018-2019
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- SCRIPTS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script async>
+        //Script from w3schools.com/bootstrap/bootstrap_theme_company.asp
+        //Creates a smooth scrolling effect when links are clicked.
+        let darkTheme = true;
+
+        $(document).ready(function(){
+            onScroll();
+            $(document).on("scroll", onScroll);
+
+            $(".nav-left a, .dropdown-content a, .jumbo a[href='#about'], .about a[href='#portfolio'], .portfolio a[href='#resume'], .resume a[href='#footer'], .footer a[href='#jumbo']").on('click', function(event) {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                    }, 500, function(){
+                    window.location.hash = hash;
+                });
+
+                if(document.getElementById("nav-dropdown-content").style.display == "block")
+                    toggleNavDropdownContent();
+            });
+        });
+
+        window.onclick = function(event) {
+            let gamesModal  = document.getElementById("games");
+            let digartModal = document.getElementById("digital-art");
+            let progModal   = document.getElementById("programming");
+            let musicModal  = document.getElementById("music");
+            let modals = [gamesModal, digartModal, progModal, musicModal];
+
+            if(modals.includes(event.target))
+                event.target.style.display = "none";
+        }
+
+        // https://jsfiddle.net/cse_tushar/Dxtyu/141/
+        function onScroll(event){
+            var scrollPos = $(document).scrollTop();
+            $('.nav .nav-left a').each(function () {
+                var currLink = $(this);
+                var refElement = $(currLink.attr("href"));
+                if (refElement.position().top <= scrollPos + 80 && refElement.position().top + refElement.height() > scrollPos + 80) {
+                    $('.nav ul li a').removeClass("active");
+                    currLink.addClass("active");
+                }
+                else{
+                    currLink.removeClass("active");
+                }
+            });
+        }
+
+        function toggleModal(modal) {
+            let menu = document.getElementById(modal);
+
+            if(menu.style.display == "block")
+                menu.style.display = "none";
+            else
+                menu.style.display = "block";
+        }
+
+        function toggleNavDropdownContent() {
+            let navDropdownContent = document.getElementById("nav-dropdown-content");
+
+            if(navDropdownContent.style.display == "block")
+                navDropdownContent.style.display = "none";
+            else
+                navDropdownContent.style.display = "block";
+        }
+        </script>
+    </body>
+</html>
