@@ -1,5 +1,5 @@
 /* Vincent Nguyen */
-/* Sept 2018 - Jan 2019 */
+/* Sept 2018 - Dec 2019 */
 /* https://vncegd.github.io/vincent/main.css */
 
 /* MARGINS */
@@ -218,7 +218,7 @@ a {
     color: #E3F2FD;
 }
 /* HOVER AND FOCUS */
-a:hover {
+a:hover, a:focus {
     text-decoration: underline;
     cursor: pointer;
 }
