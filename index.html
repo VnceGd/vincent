@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
         <title>Vincent Nguyen</title>
-        <link rel="shortcut icon" href="images/favicon-vtn.png"/>
+        <link rel="shortcut icon" href="images/vtn-logo.svg"/>
         <!-- CSS STYLING -->
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="responsive.css">
@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="nav-left">
-                <a class="active" href="#jumbo">Home</a>
+                <a class="active" href="#jumbo" style="padding: .7em 1.61803em"><img src="./images/vtn-logo.svg" alt="Logo home button"/></a>
                 <a href="#about">About</a>
                 <a href="#portfolio">Portfolio</a>
                 <a href="#resume">R&eacute;sum&eacute;</a>
@@ -415,8 +415,6 @@
         <script async>
         //Script from w3schools.com/bootstrap/bootstrap_theme_company.asp
         //Creates a smooth scrolling effect when links are clicked.
-        let darkTheme = true;
-
         $(document).ready(function(){
             onScroll();
             $(document).on("scroll", onScroll);

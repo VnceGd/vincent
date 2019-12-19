@@ -6,10 +6,6 @@
     .dropdown {
         margin: 0;
         display: block;
-        padding: 1.61803em 0;
-    }
-    .dropdown a {
-        padding-top: 2.61803em;
     }
     .dropdown img {
         height: 1.61803em;
@@ -18,7 +14,7 @@
         width: 100%;
         display: none;
         position: absolute;
-        top: 4.23606em;
+        top: 4.73606em;
     }
     .dropdown-content a {
         padding: 1.61803em;
