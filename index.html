@@ -3,7 +3,7 @@
 <!-- https://vncegd.github.io/vincent/index.html -->
 <html lang="en">
     <head>
-        <meta name="Description" content="Professional website for Vincent Nguyen, aspiring game developer.">
+        <meta name="Description" content="Personal website of Vincent Nguyen, aspiring game developer.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
         <title>Vincent Nguyen</title>
@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="nav-left">
-                <a class="active" href="#jumbo" style="padding: .7em 1.61803em"><img src="./images/vtn-logo.svg" alt="Logo home button"/></a>
+                <a class="active" href="#jumbo" style="padding: .7rem 1.62rem"><img src="./images/vtn-logo.svg" alt="Logo home button"/></a>
                 <a href="#about">About</a>
                 <a href="#portfolio">Portfolio</a>
                 <a href="#resume">R&eacute;sum&eacute;</a>
@@ -50,13 +50,14 @@
                 <div class="about-content">
                     <h3>Summary</h3>
                     <ul>
-                        <li>Junior (4th year) at Drexel University
+                        <li>B.S. Computer Science, Concentration in Game Programming and Development, Drexel University Class of 2021</li>
+                        <li>Aspiring independent game developer
                             <ul>
-                                <li>Computer Science Major with a concentration in Game Programming and Development</li>                                
+                                <li>Experienced in Unity scripting and UI development</li>
+                                <li>Some experience with digital art, game design, and project management</li>
                             </ul>
                         </li>
-                        <li>Aspiring independent game developer</li>
-                        <li>Experienced in Unity scripting and UI development; some experience with 3D art, level design, project management</li>
+                        <li>Proficient in website design and development</li>
                         <li>Pixel art and logo design hobbyist</li>
                     </ul>
                     <h3>Hobbies and Interests</h3>
@@ -112,11 +113,13 @@
                 <a class="modal-x" onclick="toggleModal('digital-art')">&times;</a>
                 <h3>Digital Art</h3>
                 <h4>Software</h4>
+                <p>Personal Use (Free)</p>
                 <ul>
-                    <p>Personal Use (Free)</p>
                     <li>2D: GIMP, VSCode (for SVG)</li>
                     <li>3D: Blender</li>
-                    <p>Educational Use</p>
+                </ul>
+                <p>Educational Use</p>
+                <ul>
                     <li>2D: Adobe Photoshop & Illustrator</li>
                     <li>3D: Autodesk Maya</li>
                 </ul>
@@ -187,11 +190,11 @@
                 <div class="portfolio-content">
                     <a href="https://area52p.com" target="_blank" rel="noopener">Cow-duction: The Milkening</a>
                     <p>
-                        An in-development game being produced for the Drexel Voyager motion platform in Game Development Workshop.
+                        An interactive theme park ride where you play as part of an alien duo tasked with abducting cows while avoiding being shot down by farmers, currently under production for Game Development Workshop I/II.
                     </p>
                     <a href="https://github.com/vncegd" target="_blank" rel="noopener">GitHub</a>
                     <p>
-                        Most of my projects can be found on my GitHub profile.<br>
+                        Most of Vincent's projects can be found on GitHub.<br>
                         Some notable projects are listed below.
                         <ul>
                             <li>
@@ -465,8 +468,10 @@
 
             if(menu.style.display == "block")
                 menu.style.display = "none";
-            else
+            else {
                 menu.style.display = "block";
+                menu.focus();
+            }
         }
 
         function toggleNavDropdownContent() {

@@ -41,13 +41,13 @@ html, body,
     padding: 6rem 1rem 2rem 1rem;
 }
 .nav {
-    padding: 0 1em;
+    padding: 0 1.62rem;
 }
 .nav a {
-    padding: 1.61803em;
+    padding: 1.62rem;
 }
 .footer {
-    padding: 0.5em 1em;
+    padding: .5rem 1.62rem;
 }
 .container {
     padding-bottom: 2.5rem;
@@ -57,7 +57,7 @@ html, body,
     padding-top: 5%;
 }
 .container button {
-    padding: 0.05em 0.1em;
+    padding: .05rem .1rem;
 }
 .middle-link {
     bottom: 0;
@@ -65,7 +65,7 @@ html, body,
 .about-content, .portfolio-content, .resume-content,
 .modal-content,
 .left-col, .right-col, .quarter-col, .half-col, .full-col {
-    padding: 1em;
+    padding: 1rem;
 }
 .modal-x {
     padding: 0 .6rem;
@@ -109,7 +109,7 @@ html, body {
     height: 100%;
 }
 h4 {
-    font-size: 1.1em;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 .dropdown-content {
@@ -165,8 +165,8 @@ h4 {
 }
 .nav .nav-left .active {
     background-color: #004c8c;
-    padding-bottom: 1.41803em;
-    border-bottom: .2em solid #E1F5FE;
+    padding-bottom: 1.42rem;
+    border-bottom: .2rem solid #E1F5FE;
 }
 .container button {
     background-color: #E3F2FD;
@@ -231,7 +231,7 @@ a {
     text-align: center;
 }
 ul li, ul li a {
-    padding: 0.25em;
+    padding: .25rem;
 }
 .container button {
     border: 1px solid #E3F2FD;
@@ -299,10 +299,14 @@ table {
 }
 th {
     width: 32%;
+    padding: 0 !important;
 }
 td { 
     height: 100%;
     width: 16%;
+}
+td ul {
+    margin: .5rem 0;
 }
 .left-col {
     width: 75%;
@@ -320,7 +324,7 @@ td {
 
 .modal-content {
     animation-name: fade-in;
-    animation-duration: 0.4s
+    animation-duration: .4s
 }
 @keyframes fade-in {
     from {top: 6rem; opacity: 0}
