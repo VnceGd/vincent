@@ -1,6 +1,4 @@
-/* Vincent Nguyen */
-/* Sept 2018 - Dec 2019 */
-/* https://vncegd.github.io/vincent/main.css */
+/* Vincent Nguyen 2018-2019 */
 
 /* https://fonts.googleapis.com/css?family=Lato */
 /* latin-ext */
@@ -23,6 +21,9 @@
 }
 
 /* MARGINS */
+p {
+    margin: 0;
+}
 html, body,
 .nav, .jumbo, .about, .portfolio, .resume, .container, .footer,
 .resume h4 {
@@ -34,6 +35,9 @@ html, body,
     margin: auto;
 }
 /* PADDING */
+p {
+    padding: .5rem;
+}
 .about h1,
 .portfolio h1,
 .resume h1 {
@@ -231,11 +235,13 @@ a {
     text-align: center;
 }
 ul li, ul li a {
-    padding: .25rem;
+    padding: .5rem;
 }
 .container button {
-    border: 1px solid #E3F2FD;
+    padding: 0.5rem 1.62rem;
+    border: 0;
     font-size: 1rem;
+    background-color: #80d8ff;
     transition: .2s;
 }
 .middle-link {
@@ -265,15 +271,14 @@ a:hover, a:focus {
 }
 .container button:hover, .container button:focus {
     background-color: #FFF;
-    border-bottom: 1px solid #448AFF;
     transition: .1s;
 }
 .middle-link:hover, .middle-link:focus {
-    background-color: #fff5;
+    background-color: #fff4;
     transition: .1s;
 }
 .modal-x:hover {
-    background-color: #555;
+    background-color: #fff4;
     transition: .1s;
 }
 .footer a:hover {
@@ -284,7 +289,7 @@ a:hover, a:focus {
     box-shadow: 0 0 1rem 0 #0D47A1 inset;
 }
 .container button:active {
-    box-shadow: 0 0 1rem 0 #DDD inset;
+    box-shadow: 0 0 0.5rem 0 #000 inset;
     border-color: #E3F2FD;
     outline: none;
 }
